@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1078469160824",
+    "firebase_url": "https://it-wms.firebaseio.com",
+    "project_id": "it-wms",
+    "storage_bucket": "it-wms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078469160824:android:ec19f0784cb74a1fcd628d",
+        "android_client_info": {
+          "package_name": "cl.caren.tic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078469160824-s4qga5d9jm9v86orvbr9oimca9fi9n5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApWQJqaBc4Rcv0KNMGoxQ6djqgjq_cE5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078469160824-s4qga5d9jm9v86orvbr9oimca9fi9n5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078469160824:android:92dbea94f257608ecd628d",
+        "android_client_info": {
+          "package_name": "com.example.consultawms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078469160824-s4qga5d9jm9v86orvbr9oimca9fi9n5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApWQJqaBc4Rcv0KNMGoxQ6djqgjq_cE5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078469160824-s4qga5d9jm9v86orvbr9oimca9fi9n5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

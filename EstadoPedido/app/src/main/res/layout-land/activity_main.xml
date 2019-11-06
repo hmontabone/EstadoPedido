@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFondo"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consulta el estado de tu pedido"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="39dp"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNumero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="#eeeeee"
+                android:hint="Numero SF/NV"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:padding="4dp"
+                android:textColor="#000000"
+                android:textSize="24dp">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="#eeeeee"
+                android:hint="Estado"
+                android:padding="4dp"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/boton_redondo"
+                android:text="Consultar" />
+
+            <Button
+                android:id="@+id/btnNueva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:layout_marginTop="24dp"
+                android:background="@drawable/boton_redondo"
+                android:text="Nueva Consulta" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="258dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_porliberar"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/por_liberar"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="42dp" />
+
+                <ImageView
+                    android:id="@+id/img_liberado"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_porliberar"
+                    app:srcCompat="@drawable/liberado"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="42dp" />
+
+                <ImageView
+                    android:id="@+id/img_pickeado"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_liberado"
+                    app:srcCompat="@drawable/pickeado"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="40dp" />
+
+                <ImageView
+                    android:id="@+id/img_embalado"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_pickeado"
+                    app:srcCompat="@drawable/embalado"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="41dp" />
+
+                <ImageView
+                    android:id="@+id/img_anden"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/img_embalado"
+                    app:srcCompat="@drawable/anden"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="42dp" />
+
+                <ImageView
+                    android:id="@+id/img_despachado"
+                    android:layout_width="34dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_anden"
+                    app:srcCompat="@drawable/despachado"
+                    tools:ignore="MissingConstraints,VectorDrawableCompat"
+                    tools:layout_editor_absoluteY="40dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
